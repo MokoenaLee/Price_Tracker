@@ -1,6 +1,13 @@
-branding, product_name, previous_price, shipping_details, product_rating_out_of_five
-ASUS,ASUS ZenBook UX533 Ultra Slim Compact Laptop 15.6" FHD 4-Way NanoEdge Intel Core i7-8565U 16GB DDR4 1TB PCIe SSD GeForce GTX 1050 IR Camera TPM Windows 10 Pro Icicle Silver UX533FD-NS76 Newe,1499.99,$1,299.99 (3 Offers),Free Shipping,4
-Acer America,Acer Aspire 3 15.6" - AMD Ryzen 7 2700U Quad-core (4 Core) 2.20 GHz - 8 GB DDR4 SDRAM - 256 GB SSD - Windows 10 Home 64-bit - 1920 x 1080 - A315-41-R14K - NX.GY9AA.014 - Obsidian Black,729.99,$626.99 ,Free Shipping,3
-Lenovo,Lenovo Laptop IdeaPad L340 81LG0011US Intel Core i5 8th Gen 8265U (1.60 GHz) 8 GB Memory 256 GB SSD Intel UHD Graphics 620 15.6" Windows 10 Home 64-bit,699.99,$499.99 (2 Offers),Free Shipping,3
-Lenovo,Lenovo Laptop IdeaPad L340 81LW000DUS AMD Ryzen 5 2nd Gen 3500U (2.10 GHz) 8 GB Memory 256 GB SSD AMD Radeon Vega 8 15.6" Windows 10 Home 64-bit - OEM,599.99,$469.99 ,$0.99 Shipping,3
-Lenovo,Lenovo Laptop IdeaPad 330 81D2005CUS AMD Ryzen 5 1st Gen 2500U (2.00 GHz) 8 GB Memory 256 GB SSD AMD Radeon Vega 8 15.6" Windows 10 Home 64-Bit,679.99,$449.99 (4 Offers),Free Shipping,4
+branding, product_name, previous_price, current_price, shipping_details, product_rating_out_of_five
+ASUS,ASUS ZenBook UX533 Ultra Slim Compact Laptop| 15.6" FHD 4-Way NanoEdge| Intel Core i7-8565U| 16GB DDR4| 1TB PCIe SSD| GeForce GTX 1050| IR Camera| TPM| Windows 10 Pro| Icicle Silver| UX533FD-NS76 Newe,N/A,$1,299.99 (3 Offers),Free Shipping,4
+Acer America,Acer Aspire 3 15.6" - AMD Ryzen 7 2700U Quad-core (4 Core) 2.20 GHz - 8 GB DDR4 SDRAM - 256 GB SSD - Windows 10 Home 64-bit - 1920 x 1080 - A315-41-R14K - NX.GY9AA.014 - Obsidian Black,N/A,$626.99 ,Free Shipping,3
+Lenovo,Lenovo Laptop IdeaPad L340 81LG0011US Intel Core i5 8th Gen 8265U (1.60 GHz) 8 GB Memory 256 GB SSD Intel UHD Graphics 620 15.6" Windows 10 Home 64-bit,N/A,$499.99 (2 Offers),Free Shipping,3
+Lenovo,Lenovo Laptop IdeaPad L340 81LW000DUS AMD Ryzen 5 2nd Gen 3500U (2.10 GHz) 8 GB Memory 256 GB SSD AMD Radeon Vega 8 15.6" Windows 10 Home 64-bit - OEM,N/A,$469.99 ,$0.99 Shipping,3
+Lenovo,Lenovo Laptop IdeaPad 330 81D2005CUS AMD Ryzen 5 1st Gen 2500U (2.00 GHz) 8 GB Memory 256 GB SSD AMD Radeon Vega 8 15.6" Windows 10 Home 64-Bit,N/A,$449.99 (4 Offers),Free Shipping,4
+ASUS,ASUS ZenBook 14 UX431FN-IH74 Ultra-thin and Light 14-inch FHD Laptop| Intel Core i7-8565U| 16 GB RAM| 512 GB PCIE SSD| GeForce MX150| Windows 10| Silver Blue,N/A,$899.99 (3 Offers),Free Shipping,5
+ASUS,ASUS VivoBook S15 15.6" Full HD NanoEdge Bezel| Whiskey Lake Intel Core i5-8265U Processor| 8 GB DDR4| 256 GB SSD| Windows 10 - S530FA-DB51-IG| Icicle Gold Slim and Portable Laptop|,N/A,$599.99 (13 Offers),$2.99 Shipping,3
+ASUS,ASUS VivoBook  AMD A9-9425 Dual Core Processor (Boost up to 3.7 GHz) with Radeon R5 Graphics| 8 GB DDR4 RAM| 256 GB SSD| 14" FHD Display Windows 10| F441BA-DS95 Light and Powerful Laptop|,N/A,$359.99 (12 Offers),$2.99 Shipping,3
+HP,HP Laptop ProBook 450 G6 5YH15UT#ABA Intel Core i7 8th Gen 8565U (1.80 GHz) 16 GB Memory 256 GB SSD NVIDIA GeForce MX130 15.6" Windows 10 Pro 64-bit,N/A,$878.99 (14 Offers),$2.99 Shipping,5
+Lenovo,Lenovo Laptop IdeaPad 530s 81EU000JUS Intel Core i7 8th Gen 8550U (1.80 GHz) 8 GB Memory 256 GB SSD NVIDIA GeForce MX150 14.0" Windows 10 Home 64-Bit,N/A,$1,000.99 (13 Offers),$2.99 Shipping,4
+Lenovo,Lenovo Laptop IdeaPad 330S 81F5001RUS Intel Core i3 8th Gen 8130U (2.20 GHz) 6 GB Memory 1 TB HDD Intel UHD Graphics 620 15.6" Windows 10 Home 64-bit,N/A,$526.99 (2 Offers),$2.99 Shipping,3
+ASUS,ASUS VivoBook S510UA-DS71 Ultra Thin and Portable Laptop| Intel Core i7-8550U Processor| 8 GB DDR4 RAM| 128 GB SSD + 1 TB HDD| 15.6" FHD WideView Display| ASUS NanoEdge Bezel| Metal Cover| S510UA-DS71,N/A,$819.99 (9 Offers),Free Shipping,3

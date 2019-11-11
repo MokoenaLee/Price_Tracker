@@ -20,7 +20,7 @@ filename = "laptop_sales.csv"
 
 f = open(filename, "w")  #open file with write tag to write 
 
-headers = "branding, product_name, previous_price, shipping_details, product_rating_out_of_five\n" #ensure a new line at end
+headers = "branding, product_name, previous_price, current_price, shipping_details, product_rating_out_of_five\n" #ensure a new line at end
 
 f.write(headers)
 
@@ -58,10 +58,26 @@ for container in containers:
     
     out_of_five = product_rating[-1] #rating is the last thing in the string
 
-    prev_price_container = container.findAll("span", {"class": "price-was-data"})
+    #prev_price_container = container.findAll("li", {"class": "price-was"})
 
-    previous_price = prev_price_container[0].text.strip()
+    prev_price_container = container.findAll("li", {"class": "price-was"})
 
+
+    #price details 
+    prev_price  = prev_price_container[0].text 
+
+
+    #some laptop deals don't have a previous price so check for empty strings
+
+    if not prev_price:
+
+        print("what is in price container",prev_price)
+        
+        previous_price = prev_price.splitlines()[1]
+    else:
+        previous_price = "N/A"
+
+    
     current_price_container = container.findAll("li", {"class":"price-current"})
 
 
@@ -76,9 +92,8 @@ for container in containers:
     current_price = price_contain_two.splitlines()[1]
 
     
-    f.write(branding + "," + product_name.replace(",", "") + "," + previous_price + "," + current_price+ ","+shipping_details + "," + out_of_five + "\n")
+    f.write(branding + "," + product_name.replace(",", "|") + "," + previous_price + "," + current_price+ ","+shipping_details + "," + out_of_five + "\n")
  
-    print("rating digit" +  out_of_five)
     print("branding:" + branding)
     print("product name:" + product_name)
     print("previous price: " +previous_price)
