@@ -15,8 +15,16 @@ page_soup = soup(page_html, "html.parser") #how to parse the webpage, in variabl
 #all items stored in the div container item-container. use function to find and retrieve, send class as an object
 containers = page_soup.findAll("div", {"class":"item-container"})
 
-#grab first item in the item list. Parse like an array.Use len() to find out # of results
-#container = containers[0]
+
+filename = "laptop_sales.csv"
+
+f = open(filename, "w")  #open file with write tag to write 
+
+headers = "branding, product_name, previous_price, shipping_details, product_rating_out_of_five\n" #ensure a new line at end
+
+f.write(headers)
+
+
 
 
 #in the loop below always remember that findAll() returns a list of elements, index it to get to one set of results
@@ -41,21 +49,45 @@ for container in containers:
 
     shipping_details =  shipping_container[0].text.strip() #clean out any extra spaces/lines 
 
+    
     rating_container = container.findAll("a", {"class": "item-rating"})
 
+    
     product_rating = rating_container[0]["title"] #retrieve the rating as an attribute of the a tag, stored
 
+    
+    out_of_five = product_rating[-1] #rating is the last thing in the string
 
+    prev_price_container = container.findAll("span", {"class": "price-was-data"})
+
+    previous_price = prev_price_container[0].text.strip()
+
+    current_price_container = container.findAll("li", {"class":"price-current"})
+
+
+    #current laptop price
+
+    price_contain_two = current_price_container[0].text.strip()
+
+    #splitlines() used bto divide the string into an array for better extraction. Initial look for one product: 
+    #'\n\n|\n$1,299.99\xa0(3 Offers)\n\n–\n\n' .> after splitlines: ['|\n', '$1,299.99\xa0(3 Offers)\n', '\n', '–']
+
+
+    current_price = price_contain_two.splitlines()[1]
+
+    
+    f.write(branding + "," + product_name.replace(",", "") + "," + previous_price + "," + current_price+ ","+shipping_details + "," + out_of_five + "\n")
  
+    print("rating digit" +  out_of_five)
     print("branding:" + branding)
     print("product name:" + product_name)
+    print("previous price: " +previous_price)
+    print("current price: " +current_price)
     print("shipping_details:" + shipping_details)
-    print("product rating:" + product_rating)
+    print("product rating/5:" + out_of_five)
+
+f.close()
 
 
-
-	
-
-	#container_title = 
 
 
