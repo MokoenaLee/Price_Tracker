@@ -41,9 +41,16 @@ for container in containers:
 
     shipping_details =  shipping_container[0].text.strip() #clean out any extra spaces/lines 
 
+    rating_container = container.findAll("a", {"class": "item-rating"})
+
+    product_rating = rating_container[0]["title"] #retrieve the rating as an attribute of the a tag, stored
+
+
+ 
     print("branding:" + branding)
     print("product name:" + product_name)
     print("shipping_details:" + shipping_details)
+    print("product rating:" + product_rating)
 
 
 
