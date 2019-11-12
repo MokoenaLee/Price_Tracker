@@ -14,5 +14,6 @@ to see if any sales are available.
 
 ## Features in Production
 -SQL DB to store dataset currently stored in a csv file (DB for practice purposes since dataset is not robust)
+-content aggregation as a background process
 -Incorporate a web framework to make this a web utility (for practice purposes)
 
