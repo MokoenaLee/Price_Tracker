@@ -11,9 +11,9 @@ to see if any sales are available.
 ## Implemented Feature(s)
 -Read and Parse HTML on the website newegg.com on the laptops page 
 -Store returned dataset which includes: laptop brand, name with laptop specifications, precvious price(if available), current price, shipping details and user rating out of five
+-content aggregation as a background process(imported scheduler to handle this)
 
 ## Features in Production
 -SQL DB to store dataset currently stored in a csv file (DB for practice purposes since dataset is not robust)
--content aggregation as a background process
 -Incorporate a web framework to make this a web utility (for practice purposes)
 
