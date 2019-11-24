@@ -66,12 +66,21 @@ def laptop_price_tracker():
 
         prev_price  = prev_price_container[0].text  #price details 
 
+        #distinguish laptops with previous prices from those with none by checking the length of the returned values
 
+        str_length_b = len(prev_price.strip()) == 0
+
+        print("testing length return result",str_length_b)
+
+
+       #BIGEST PROBLEM: The empty previous price products throw an error
         #some laptop deals don't have a previous price so check for empty strings
-        if not prev_price:
-            previous_price = prev_price.splitlines()[1]
-        else:
+        if str_length_b :
             previous_price = "N/A"
+        else:
+            previous_price = prev_price.splitlines()[1]
+
+            
 
         current_price_container = container.findAll("li", {"class":"price-current"})
 
@@ -86,8 +95,8 @@ def laptop_price_tracker():
         f.write(branding + "," + product_name.replace(",", "|") + "," + previous_price + "," + current_price+ ","+shipping_details + "," + out_of_five + "\n")
         print("branding:" + branding)
         print("product name:" + product_name)
-        print("previous price: " +previous_price)
         print("current price: " +current_price)
+        print("previous price: " +previous_price)
         print("shipping_details:" + shipping_details)
         print("product rating/5:" + out_of_five)
 
@@ -99,7 +108,7 @@ def laptop_price_tracker():
 if __name__ == "__main__":
 
     #schedule.every().wednesday.do(laptop_price_tracker)
-    schedule.every(30).minutes.do(laptop_price_tracker)
+    schedule.every(1).minutes.do(laptop_price_tracker)
 
     while True:
         schedule.run_pending()
