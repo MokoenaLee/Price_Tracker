@@ -6,8 +6,6 @@ aggregator that, in its initial stages, scrapes lapop sales from the newegg webs
 takes the user straight to what they are looking for instead of performing a search first 2) A user can refer to it as frequently as they desire
 to see if any sales are available.
 
-## Product Features
-
 ## Implemented Feature(s)
 -Read and Parse HTML on the website newegg.com on the laptops page 
 -Store returned dataset which includes: laptop brand, name with laptop specifications, precvious price(if available), current price, shipping details and user rating out of five
@@ -16,4 +14,6 @@ to see if any sales are available.
 ## Features in Production
 -SQL DB to store dataset currently stored in a csv file (DB for practice purposes since dataset is not robust)
 -Incorporate a web framework to make this a web utility (for practice purposes)
+
+
 
