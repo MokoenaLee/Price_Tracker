@@ -18,7 +18,7 @@ to see if any sales are available.
 
 * Python version used: ~> 3.*
 
-* Packages: rBeautifulSoup4
+* Packages: BeautifulSoup, scheduler (#schedule found here:https://pypi.org/project/schedule/); urlopen
 
 * Environment: Desgined to be run in terminal
 
